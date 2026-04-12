@@ -58,8 +58,12 @@ public class StreamDemo {
                 .distinct() // Intermediate Stage
                 .map(num -> num * num) // Intermediate Stage
                 .sorted() // Intermediate Stage
-                .toList(); // Terminal Stage
+                .skip(2). // Intermediate Stage
+                limit(2). // Intermediate Stage
+                toList(); // Terminal Stage
         numsarray.forEach(num -> System.out.println("num=" + num));
+        // num=9
+        // num=16
 
         // numsarray.add(45); // not allowed it will throw an exception
     }
