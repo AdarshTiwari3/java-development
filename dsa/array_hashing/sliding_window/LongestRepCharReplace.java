@@ -1,5 +1,7 @@
 package dsa.array_hashing.sliding_window;
 
+import java.util.*;
+
 class Solution {
     public int characterReplacement(String s, int k) {
         Map<Character, Integer> map = new HashMap<>();
