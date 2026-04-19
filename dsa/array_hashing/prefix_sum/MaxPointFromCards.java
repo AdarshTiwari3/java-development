@@ -44,5 +44,6 @@ public class MaxPointFromCards {
         int res = sol.maxScore(arr, k);
 
         System.out.println("ans=" + res); // ans = 12 (1+5+6)
+        // TC=> O(k) SC=>O(1)
     }
 }
