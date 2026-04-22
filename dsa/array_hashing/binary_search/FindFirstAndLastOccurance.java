@@ -69,5 +69,7 @@ public class FindFirstAndLastOccurance {
             System.out.println("num=" + num);
         }
 
+        // TC => O(log n) + O(log n) = O(log n)
+
     }
 }
